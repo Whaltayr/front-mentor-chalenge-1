@@ -37,19 +37,25 @@ main {
 }
 .card {
   max-width: 40rem;
+  height: auto;
   background-color: var(--White);
   border-radius: 12px;
   display: flex;
   box-shadow: 2px 4px 8px #33333317;
 }
-.card .card-image img {
-  height: 400px;
+.card .card-image {
+  max-height: 480px;
   max-width: 28rem;
+  border-radius: 12px 0 0 12px;
+}
+.card .card-image img {
+  max-height: inherit;
+  max-width: inherit;
   border-radius: 12px 0 0 12px;
 }
 .card .card-meta {
   max-width: 30ch;
-  padding: 2rem;
+  padding: 1.8rem;
 }
 .card .card-meta .perfume {
   font-family: var(--Family-nor);
